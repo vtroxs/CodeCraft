@@ -31,7 +31,7 @@ header{
 
   .main{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
@@ -40,23 +40,9 @@ header{
   }
 
   .main_text{
-   display: flex;
-    align-items: center;
-    width: 350px;
-    height: 360px;
-  }
-
-  .main p{
     font-size: 96px;
+    width: 300px;
   }
-
-.main2{
-  width: 100%;
-  
-  display: flex;
-  justify-content: center;
-}
-
 
 
 /* #region our-works */

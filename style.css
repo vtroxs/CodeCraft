@@ -241,6 +241,7 @@ header{
   /* footer */
 
   .footer{
+    gap: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -282,4 +283,11 @@ header{
 
   .footer_soc a:hover{
     color: #514b55;
+  }
+
+  input{
+    margin-bottom: 15px;
+    padding: 12px;
+    border:1px solid #242126;
+    border-radius: 10px;
   }

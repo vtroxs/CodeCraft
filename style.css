@@ -28,6 +28,14 @@ header{
     background-color: rgb(134, 134, 186);
     font-family: 'Outfit', sans-serif;
 }
+
+  .main{
+    width: 100%;
+    height: 700px;
+  }
+
+
+
 /* #region our-works */
 .our-works{
     background-color: #242126;

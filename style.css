@@ -40,9 +40,9 @@ header{
   }
 
   .main_text{
-   
- 
-    width: 400px;
+   display: flex;
+    align-items: center;
+    width: 350px;
     height: 360px;
   }
 
@@ -50,7 +50,10 @@ header{
     font-size: 96px;
   }
 
-
+img{
+  width: 100px;
+  height: 70px;
+}
 
 /* #region our-works */
 .our-works{

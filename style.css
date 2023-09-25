@@ -50,10 +50,14 @@ header{
     font-size: 96px;
   }
 
-img{
-  width: 100px;
-  height: 70px;
+.main2{
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
 }
+
+
 
 /* #region our-works */
 .our-works{

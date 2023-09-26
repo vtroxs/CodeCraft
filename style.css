@@ -12,6 +12,7 @@
 :root {
     --main-text-color: #FFF;
     --second-text-color: #242126;
+    --services-bg-color: #02021E;
     }
 
 body {
@@ -50,10 +51,10 @@ header{
 
 
 /* #region our-works */
-.our-works{
-    background-color: #242126;
-    padding: 100px 153px;
-    color: var(--main-text-color)
+  .our-works{
+      background-color: #242126;
+      padding: 100px 153px;
+      color: var(--main-text-color)
   }
   .our-works__title{
     font-size: 64px;

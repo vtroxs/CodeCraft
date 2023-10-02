@@ -18,8 +18,7 @@
 body {
     font-family: 'Lato', sans-serif;
     }
-
- header p:hover{
+header p:hover{
       color:#242126;
       cursor: pointer;
     }
@@ -29,13 +28,14 @@ header{
     flex-wrap: wrap;
     justify-content: space-around;
     position: fixed;
+    z-index: 10;
     align-items: center;
     font-size: 24px;
     width: 100%;
     height: 100px;
-  background-color: white;
+    background-color: white;
 
-    font-family: 'Outfit', sans-serif;
+    /* font-family: 'Outfit', sans-serif; */
 }
   .nav{
     text-transform: uppercase;
@@ -54,30 +54,95 @@ header{
 
   .main{
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    width: 100%;
-    height: 700px;
-
+    padding: 150px 153px;
+    box-sizing: border-box;
+    gap: 20px;
+    height: 100vh;
   }
 
   .main_text{
-
+    width: 58%;
+    counter-reset: var(--second-text-color);
     font-size: 96px;
-    width: 300px;
     font-weight: 700;
-    flex-wrap: wrap;
+    line-height: 125%;
+    letter-spacing: -1.92px;
     text-transform: uppercase;
+    display: inline-block;
   }
-
+  .main__arrow-btn img{
+    border: 1px solid var(--second-text-color);
+    border-radius: 50px;
+    padding: 25px 22px;
+  }
   .main_photo{
-    width: 300px;
-    height: 200px;
+    /* width: 300px;
+    height: 200px; */
+    width: 41%;
+    flex-shrink: 1;
+
+    position: relative;
   }
+  .main_photo img{
+    width: 100%;
+  }
+.main__envelope-btn{
+  /* position: relative; */
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  /* background-color: #514b55; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  box-sizing: border-box;
+  text-decoration: none;
+  top: 53%;
+  left: 56%;
+}
+.logo{
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background-color: #7B66FF;
+  border-radius: 50%;
 
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img{
+  height: 43px;
+  width: 44px;
+}
+.text{
+  color: var(--main-text-color);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 150%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: rotateText 10s linear infinite;
+}
+@keyframes rotateText{
+  0%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+.text span{
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  transform-origin: 0 85px;
+}
 /* #region our-works */
   .our-works{
     background-color: #242126;

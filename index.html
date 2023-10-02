@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
-
-    <title>CodeCraft</title>
-</head>
-<body>
-    <header>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+      <title>CodeCraft</title>
+  </head>
+  <body>
+      <header>
         <p>CodeCraft</p>
         <div class="nav">
           <a href="#">Головна</a>
+          <a href="#">Портфоліо</a>
           <a href="#">Про нас</a>
           <a href="#">Зв'язок з нами</a>
-          <a href="#">Портфоліо</a>
-
         </div>
-    </header>
-    <div class="main">
-      <div class="main_text">
-        <img src="images/main1.png" alt="">
-      <p>Дизайн</p> 
-      <p>Знання</p>
-      <p>Розробка</p>
+      </header>
+      <div class="main">
+        <h1 class="main_text">
+          Дизайн
+          <img src="images/main1.png" alt=""><br>
+          <img src="images/main2.png" alt=""> Знання<br>
+          Розробка 
+          <a class="main__arrow-btn" href="#envelope"><img src="images/arrow.svg" alt="arrow"></a>
+        </h1>
+        <div class="main_photo">
+          <img src="images/main4.png" alt="">
+          <a class="main__envelope-btn" href="#contacts" id="envelope">
+            <div class="logo"><img src="images/envelope.svg" alt="envelope"></div>
+            <div class="text">
+              <p>Зв'яж іться з нами &middot; Зв'яж іться з нами &middot;</p>
+            </div>
+          </a> 
+        </div>
       </div>
-      <div class="main_photo">
-        <img src="images/main4.png" alt="">
-      </div>
-    </div>
           <!-- #region our-works -->
           <section class="our-works">
             <h2 class="our-works__title">
@@ -123,7 +128,7 @@
 
   <!-- footer -->
 
-          <div class="footer">
+        <div class="footer" >
 
           <div class="footer_text">
 
@@ -144,16 +149,16 @@
 
             <div class="footer_info">
                 Не подобаються форми? Напишіть нам на е.пошту: @codecraft.agency
-              </div>
-
-              <div class="footer_info">
-                 <p>@CodeCraft 2023. All rights reserved - Privacy Policy</p> 
-              </div>
-
-
             </div>
 
-            <div class="footer_form">
+            <div class="footer_info">
+              <p>@CodeCraft 2023. All rights reserved - Privacy Policy</p> 
+            </div>
+
+
+          </div>
+
+          <div class="footer_form" id="#contacts">
               <input type="text" placeholder="Ваше ім'я">
               <br>
               <input type="text" placeholder="Ваша пошта">
@@ -174,7 +179,6 @@
                   <p> 1000$+</p>
                 </div>
               </div>
-
               <div class="footer_memo">
                 <textarea type="text" placeholder="Деталі проєкту (необов'язково)"></textarea>
                 <div class="footer_btn">
@@ -184,9 +188,8 @@
              
             </div>
            
-          </div>
-
-
-          
-</body>
+          </div> 
+        </div>      
+  <script src="index.js"></script>
+  </body>
 </html>

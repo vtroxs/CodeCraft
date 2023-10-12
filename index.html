@@ -49,11 +49,18 @@
         </div>
       </div>
     </header>
-<!-- #end region -->
+<!-- #endregion -->
+<!-- #region main -->
     <div class="main">
       <div class="main_text" >
-        <div class="main-text__row"><h1>Дизайн</h1><img class="main_text__first-img" src="images/main1.png" alt=""></div>
-        <div class="main-text__row"><img class="main_text__second-img" src="images/main2.png" alt=""><h1>Знання</h1></div>
+        <div class="main-text__row">
+          <h1>Дизайн</h1>
+          <img class="main_text__first-img" src="images/main1.png" alt="">
+        </div>
+        <div class="main-text__row">
+          <img class="main_text__second-img" src="images/main2.png" alt="">
+          <h1>Знання</h1>
+        </div>
         <div class="main-text__row">
           <h1>Розробка</h1>
           <div class="main__arrow-btn">
@@ -71,6 +78,7 @@
         </a> 
       </div>
     </div>
+<!-- #endregion -->
 <!-- #region our-works -->
     <section class="our-works" id="works">
       <h2 class="our-works__title">
@@ -83,7 +91,7 @@
         <div class="our-works__item_1">
           <a class="our-works__link-block" href="#" >
             <div class="our-works__img-container">
-              <img class="our-works__item-img" src="images/works_img_1.png" alt="" >
+              <img class="our-works__item-img" src="images/screen1.jpg" alt="" >
             </div>
             <h3 class="our-works__item-title">Сайт для Турату</h3>
           </a>
@@ -91,7 +99,7 @@
         <div class="our-works__item_2">
           <a class="our-works__link-block" href="#" >
             <div class="our-works__img-container">
-              <img class="our-works__item-img" src="images/works_img_2.png" alt="" >
+              <img class="our-works__item-img" src="images/screen1.jpg" alt="" >
             </div>
             <h3 class="our-works__item-title">Сайт для Турату</h3>
           </a>
@@ -101,7 +109,7 @@
         <div class="our-works__item_3">
           <a class="our-works__link-block" href="#" >
             <div class="our-works__img-container">
-              <img class="our-works__item-img" src="images/works_img_3.png" alt="" >
+              <img class="our-works__item-img" src="images/screen1.jpg" alt="" >
             </div>
             <h3 class="our-works__item-title">Сайт для Турату</h3>
           </a>
@@ -109,7 +117,7 @@
         <div class="our-works__item_4">
           <a class="our-works__link-block" href="#" >
             <div class="our-works__img-container">
-              <img class="our-works__item-img" src="images/works_img_4.png" alt="" >
+              <img class="our-works__item-img" src="images/screen1.jpg" alt="" >
             </div>
             <h3 class="our-works__item-title">Сайт для Турату</h3>
           </a>
@@ -127,7 +135,7 @@
             Наша пристрасть створювати круті проекти. З кожним завданням ми вносимо свою креативну енергію 
             та власний підхід.
           </p>
-          <a class="right_side__btn" href="#">Зв'яжіться з нами</a>
+          <a class="right_side__btn" href="#contacts">Зв'яжіться з нами</a>
         </div>
       </div>
     </section>
@@ -159,7 +167,7 @@
     </section>
 <!-- #endregion -->
 
-  <!-- footer -->
+  <!-- #region footer -->
 
         <div class="footer" id="contacts" >
 
@@ -191,7 +199,7 @@
           </div>
 
           <div class="footer_form" id="#contacts">
-            <form action="#">
+            <form name="contact" method="POST" netlify>
               <input tabindex="1" type="text" name="name" placeholder="Ваше ім'я">
               <br>
               <input tabindex="2" type="email" name="email" placeholder="Ваша пошта">
@@ -215,13 +223,14 @@
                 <label tabindex="5" for="more1000" class="footer_btn" role="radio">1000$&gt;</label>
               </div>
               <div class="footer_memo">
-                <textarea tabindex="6" type="text" placeholder="Деталі проєкту (необов'язково)"></textarea>
+                <textarea tabindex="6" type="text" name="details" placeholder="Деталі проєкту (необов'язково)"></textarea>
                 <button tabindex="7" class="footer_btn">Надіслати
                 </button>
               </div>
             </form>
           </div> 
-        </div>      
+        </div> 
+<!-- #endregion -->     
   <script src="index.js"></script>
   </body>
 </html>

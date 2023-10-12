@@ -27,6 +27,7 @@
     --second-text-color: #242126;
     --services-bg-color: #02021E;
     --menu-title-color: #C4C5CA;
+    --dark-color: #000;
     }
 
 body {
@@ -72,7 +73,8 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 40px 90px;
+  /* padding: 40px 90px; */
+  padding: 25px 90px;
   box-sizing: border-box;
 }
 .header__top{
@@ -80,7 +82,8 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  padding: 40px 90px;
+  /* padding: 40px 90px; */
+  padding: 25px 90px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -146,7 +149,7 @@ body {
   width: 50vw;
   display: flex;
   flex-direction: column;
-  padding: 40px 90px;
+  padding: 25px 90px;
   background-color: var(--main-text-color);
   z-index: 15;
 }
@@ -186,7 +189,7 @@ body {
   align-items: start;
 }
 .menu__bottom-soc-item{
-  color: #000;
+  color: var(--dark-color);
   font-size: 16px;
   font-weight: 500;
   line-height: 150%;
@@ -194,7 +197,7 @@ body {
   cursor: pointer;
 }
 .menu__bottom_nav-item{
-  color: #000;
+  color: var(--dark-color);
   font-size: 32px;
   font-weight: 500;
   line-height: 150%;
@@ -203,25 +206,25 @@ body {
 }
 @media screen and (max-width: 1249px){
   .header{
-    padding: 40px 60px;
+    padding: 25px 60px;
   }
   .header__top{
-    padding: 40px 60px;
+    padding: 25px 60px;
   }
   .menu{
-    padding: 40px 60px;
+    padding: 25px 60px;
   }
 }
 @media screen and (max-width: 1024px){
   .header{
-    padding: 40px 20px;
+    padding: 25px 20px;
   }
   .header__top{
-    padding: 40px 20px;
+    padding: 25px 20px;
   }
   .menu{
     width: 60vw;
-    padding: 40px 40px;
+    padding: 25px 20px;
   }
   .menu__bottom-container{
     gap: 20px;
@@ -230,7 +233,7 @@ body {
 @media screen and (max-width: 576px){
   .menu{
     width: 100vw;
-    padding: 40px 20px;
+    padding: 25px 20px;
   }
   .menu__bottom-container{
   flex-direction: column-reverse;
@@ -627,7 +630,11 @@ body {
     transition: all 0.3s;
     border-bottom: 1px solid var(--main-text-color);
   }
-  
+  @media screen and (min-width: 1500px){
+    .our-works__content-bottom{
+      gap: 60px;
+    }
+  }
   @media screen and (max-width: 1024px){
     .our-works{
       padding: 100px 20px;
@@ -690,7 +697,7 @@ body {
     }
   }
   /* #endregion */
-  /* #region our-approach */
+/* #region our-approach */
   .our-approach{
     padding: 100px 153px;
     color: var(--second-text-color);
@@ -800,8 +807,8 @@ body {
       text-align: center;
     }
   }
-  /* #endregion */
-  /* #region services */
+/* #endregion */
+/* #region services */
 .services{
   padding: 100px 153px;
   border-radius: 50px;
@@ -915,7 +922,7 @@ body {
 }
 /* #endregion */
 
- /* footer */
+ /* #region footer*/
   .footer{
     padding: 100px 153px;
     display: flex;
@@ -958,22 +965,33 @@ body {
     text-decoration: none;
     color:var(--second-text-color);
     display: inline-block;
-
+    border-bottom: 1px solid var(--main-text-color);
   }
 
   .footer_soc a:hover{
     border-bottom: 1px solid var(--second-text-color);
   }
+  
   input{
     margin-bottom: 15px;
     padding: 12px;
-    border:1px solid #242126;
+    border:1px solid var(--second-text-color);
     border-radius: 10px;
     width: 269px;
     box-sizing: border-box;
+    outline: none;
   }
-
-  .footer_button{
+  .footer_form input, .footer_form label, 
+  .footer_form textarea, .footer_form button{
+    outline: none;
+  }
+  .footer_form input:focus,
+  .footer_form label:focus,
+  .footer_form textarea:focus, 
+  .footer_form button:focus{
+    box-shadow: 0 0 4px 1px var(--second-text-color);
+  }
+  .footer_radio{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -997,13 +1015,22 @@ body {
     color: var(--main-text-color);
     cursor: pointer; 
   }
-
+  .footer_btn.active {
+    background-color: var(--second-text-color);
+    color: var(--main-text-color);
+}
   input[type="radio"]{
     display: none;
   }
-  input[type="radio"]:checked{
-    background-color: var(--second-text-color);
-    color: var(--main-text-color);
+    
+  input[type="radio"]:checked + label{
+      background-color: var(--second-text-color);
+      color: var(--main-text-color);
+  }
+  .footer_radio label:focus,
+  .footer_btn:focus {
+    background-color: var(--menu-title-color);
+    color: var(--second-text-color);
   }
 
   #p_form{
@@ -1039,7 +1066,7 @@ body {
     }
   }
   @media screen and (max-width: 940px){
-    .footer_button{
+    .footer_radio{
       flex-wrap: wrap;
       max-width: 330px;
       justify-content: flex-start;
@@ -1080,7 +1107,7 @@ body {
     .footer_text{
       width: 100%;
     }
-    .footer_button{
+    .footer_radio{
       flex-wrap: wrap;
       max-width: 100%;
       justify-content: flex-start;
@@ -1102,3 +1129,4 @@ body {
       width: 100%;
     }
   }
+/* #endregion */

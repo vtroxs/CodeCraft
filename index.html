@@ -43,7 +43,7 @@
               <a href="#works" class="menu__bottom_nav-item">Наші роботи</a>
               <a href="#about" class="menu__bottom_nav-item">Про нас</a>
               <a href="#services" class="menu__bottom_nav-item">Послуги</a>
-              <a href="#contactus" class="menu__bottom_nav-item">Зв'яжіться з нами</a>
+              <a href="#contacts" class="menu__bottom_nav-item">Зв'яжіться з нами</a>
             </nav>
           </div>
         </div>
@@ -54,7 +54,12 @@
       <div class="main_text" >
         <div class="main-text__row"><h1>Дизайн</h1><img class="main_text__first-img" src="images/main1.png" alt=""></div>
         <div class="main-text__row"><img class="main_text__second-img" src="images/main2.png" alt=""><h1>Знання</h1></div>
-        <div class="main-text__row"><h1>Розробка</h1><a class="main__arrow-btn" href="#envelope"><img src="images/arrow.svg" alt="arrow"></a></div>
+        <div class="main-text__row">
+          <h1>Розробка</h1>
+          <div class="main__arrow-btn">
+            <img src="images/arrow.svg" alt="arrow">
+          </div>
+        </div>
       </div>
       <div class="main_photo">
         <img src="images/main4.png" alt="">
@@ -119,7 +124,7 @@
         <img class="our-approach__content-img" src="images/our-approach_img.svg" alt="approach">
         <div class="our-approach__content-right_side">
           <p class="right_side__text">Ми - команда професіоналів у сфері креативного дизайну & брендінгу.
-            Наша страсть створювати круті проекти. З кожним завданням ми вносимо свою креативну енергію 
+            Наша пристрасть створювати круті проекти. З кожним завданням ми вносимо свою креативну енергію 
             та власний підхід.
           </p>
           <a class="right_side__btn" href="#">Зв'яжіться з нами</a>
@@ -156,7 +161,7 @@
 
   <!-- footer -->
 
-        <div class="footer" id="contactus" >
+        <div class="footer" id="contacts" >
 
           <div class="footer_text">
 
@@ -166,17 +171,20 @@
             <div class="footer_info">
               Не соромтеся звертатися до нас, якщо ви хочете співпрацювати з нами або просто поговорити.
             </div>
-
             <div class="footer_soc">
               <a href="https://instagram.com">Instagram</a>
             </div>
             <div class="footer_soc">
               <a href="#">Facebook</a>
             </div>
+            <div class="footer_soc">
+              <a href="tel:+380973607438">+380973607438</a>
+            </div>
 
             <div class="footer_info">
                 Не подобаються форми? Напишіть нам на е.пошту: @codecraft.agency
             </div>
+            <br>
             <div class="footer_info">
               <p>@CodeCraft 2023. All rights reserved - Privacy Policy</p> 
             </div>
@@ -184,31 +192,31 @@
 
           <div class="footer_form" id="#contacts">
             <form action="#">
-              <input type="text" name="name" placeholder="Ваше ім'я">
+              <input tabindex="1" type="text" name="name" placeholder="Ваше ім'я">
               <br>
-              <input type="email" name="email" placeholder="Ваша пошта">
+              <input tabindex="2" type="email" name="email" placeholder="Ваша пошта">
               <br>
-              <input type="text" name="company" placeholder="Назва Вашої компанії">
+              <input tabindex="3" type="text" name="company" placeholder="Назва Вашої компанії">
               <br>
-              <input type="tel" name="tel" placeholder="Намер телефону">
+              <input tabindex="4" type="tel" name="tel" placeholder="Намер телефону">
 
               <p id="p_form">Який у Вас бюджет?</p>
-              <div class="footer_button">
-                <input type="radio" name="budget" id="less150">
-                <label for="less150" class="footer_btn">&lt;150$</label>
+              <div class="footer_radio">
+                <input tabindex="5" type="radio" name="budget" id="less150" value="less150">
+                <label tabindex="5" for="less150" class="footer_btn" role="radio">&lt;150$</label>
 
-                <input type="radio" name="budget" id="more150">
-                <label for="more150" class="footer_btn">150$&gt;</label>
+                <input tabindex="5" type="radio" name="budget" id="more150" value="more150">
+                <label tabindex="5" for="more150" class="footer_btn" role="radio">150$&gt;</label>
 
-                <input type="radio" name="budget" id="to1000">
-                <label for="to1000" class="footer_btn">500$-1000$</label>
+                <input tabindex="5" type="radio" name="budget" id="to1000" value="to1000">
+                <label tabindex="5" for="to1000" class="footer_btn" role="radio">500$-1000$</label>
 
-                <input type="radio" name="budget" id="more1000">
-                <label for="more1000" class="footer_btn">1000$&gt;</label>
+                <input tabindex="5" type="radio" name="budget" id="more1000" value="more1000">
+                <label tabindex="5" for="more1000" class="footer_btn" role="radio">1000$&gt;</label>
               </div>
               <div class="footer_memo">
-                <textarea type="text" placeholder="Деталі проєкту (необов'язково)"></textarea>
-                <button class="footer_btn">Надіслати
+                <textarea tabindex="6" type="text" placeholder="Деталі проєкту (необов'язково)"></textarea>
+                <button tabindex="7" class="footer_btn">Надіслати
                 </button>
               </div>
             </form>

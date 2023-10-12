@@ -19,3 +19,33 @@ function moveFooterForm() {
 }
 window.addEventListener('load', moveFooterForm);
 window.addEventListener('resize', moveFooterForm);
+
+// form radio button checked
+const labels = document.querySelectorAll('label[for]');
+
+labels.forEach((label) => {
+    label.addEventListener('keydown', function (event) {
+        if (event.code === 'Space') {
+            const associatedRadioButtonId = this.getAttribute('for');
+            const radioButton = document.getElementById(associatedRadioButtonId);
+
+            if (radioButton) {
+                radioButton.checked = !radioButton.checked;
+            }
+        }
+    });
+});
+const button = document.querySelector('.footer_btn');
+
+button.addEventListener('keydown', function(event) {
+    if (event.keyCode === 32) {
+        event.preventDefault();
+        button.classList.add('active');
+    }
+});
+
+button.addEventListener('keyup', function(event) {
+    if (event.keyCode === 32) {
+        button.classList.remove('active');
+    }
+});

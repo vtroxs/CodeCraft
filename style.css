@@ -999,7 +999,6 @@ body {
     justify-content: center;
     gap:10px;
     margin-bottom: 20px;
-    transition: all 0.3s;
   }
 
   .footer_btn{
@@ -1010,12 +1009,14 @@ body {
     border: 1px solid var(--second-text-color);
     padding: 10px 20px;
     border-radius: 10px;
+    transition: all 0.3s;
   }
 
   .footer_btn:hover{
     background-color: var(--second-text-color);
     color: var(--main-text-color);
-    cursor: pointer; 
+    cursor: pointer;
+    transition: all 0.3s;
   }
   .footer_btn.active {
     background-color: var(--second-text-color);
@@ -1046,6 +1047,7 @@ body {
     border-radius: 10px;
     margin-bottom: 19px;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
   }
   @media screen and (max-width: 1500px){
     .footer{

@@ -94,6 +94,7 @@ body {
 .header a{
   display: inline-block;
   text-decoration: none;
+  transition: all 0.3s;
 }
 .header a:hover{
   text-decoration: underline;
@@ -613,7 +614,7 @@ body {
     height: 100%;
     object-fit: cover;
     transition: all 0.3s;
-    border-radius: 40px;
+    border-radius: 9%;
   }
   .our-works__item-img:hover{
     transform: scale(1.05);
